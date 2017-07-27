@@ -3,7 +3,6 @@ package com.takisoft.frescotransitions.recyclerview.photo;
 import android.graphics.drawable.Animatable;
 import android.net.Uri;
 import android.support.v4.view.PagerAdapter;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -48,8 +47,7 @@ public class PhotoAdapter extends PagerAdapter {
 
         //ViewCompat.setTransitionName(photoDraweeView, "image_" + position);
         photoDraweeView.setTransitionName("image_" + position);
-
-        Log.d("PhotoAdapter", "transition: " + photoDraweeView.getTransitionName());
+        photoDraweeView.setTag(photoDraweeView.getTransitionName());
 
         PipelineDraweeControllerBuilder controller = Fresco.newDraweeControllerBuilder();
         controller.setUri(images.get(position));

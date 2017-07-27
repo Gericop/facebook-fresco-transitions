@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity
         if (savedInstanceState == null) {
             getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.content, RecyclerViewListFragment.createNormal())
+                    .replace(R.id.content, RecyclerViewListFragment.createPhoto())
                     .commit();
         }
     }

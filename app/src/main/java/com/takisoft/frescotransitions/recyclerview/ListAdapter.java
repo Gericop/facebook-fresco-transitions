@@ -32,6 +32,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> im
         holder.itemView.setTag(holder);
 
         holder.draweeView.setImageURI(images.get(position));
+        holder.draweeView.setTransitionName("img_" + position);
     }
 
     @Override

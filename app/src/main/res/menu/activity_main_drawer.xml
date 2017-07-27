@@ -10,6 +10,7 @@
             android:title="RecyclerView (normal)" />
         <item
             android:id="@+id/nav_recycler_view_photo"
+            android:checked="true"
             android:icon="@drawable/ic_menu_gallery"
             android:title="RecyclerView (photo)" />
         <item
